@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Ayu</title>
+    <title>Portofolio Wahyuni</title>
 
     <style>
         * {
@@ -14,53 +14,16 @@
         }
 
         body {
-            background: #fff;
+            background: #f4f7fb;
             color: #333;
         }
-
-        .hero-img img {
-            width: 350px;      /* ukuran lebar */
-            height: 350px;     /* tinggi sama biar bulat */
-            object-fit: cover; /* biar tidak gepeng */
-            border-radius: 80%; /* bikin bulat */
-            border: 5px solid white;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            margin-left: 3cm;
-            display: block;
-        }
-
-        .hero {
-    height: 90vh;
-    background: linear-gradient(to right, #ffc0cb, #be5d8e);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Container utama */
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* bikin lebih ke tengah */
-    gap: 40px; /* ini yang atur jarak */
-    width: 80%;
-    max-width: 1000px;
-}
-
-/* Teks kiri */
-.hero-text {
-    max-width: 50%;
-}
-
-
-
 
         /* Navbar */
         nav {
             display: flex;
             justify-content: space-between;
             padding: 20px 10%;
-            background: #d272a2;
+            background: #0f172a; /* NAVY */
             position: sticky;
             top: 0;
         }
@@ -70,7 +33,7 @@
         }
 
         .logo span {
-            color: #c55c91;
+            color: #3b82f6; 
         }
 
         nav ul {
@@ -88,18 +51,30 @@
             font-weight: bold;
         }
 
-        /* Hero */
+    
         .hero {
             height: 90vh;
-            background: linear-gradient(to right, #ffc0cb, #be5d8e);
+            background: linear-gradient(to right, #0f172a, #1e3a8a); /* NAVY gradient */
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
             color: white;
         }
 
-        .hero h1 {
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
             font-size: 40px;
         }
 
@@ -107,38 +82,48 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background: white;
-            color: #ff69b4;
+            background: #3b82f6;
+            color: white;
             text-decoration: none;
             border-radius: 20px;
             transition: 0.3s;
         }
 
         .btn:hover {
-            background: #ff69b4;
-            color: white;
+            background: white;
+            color: #0f172a;
         }
 
-        /* About */
+        .hero-img img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 80%;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            margin-left: 3cm;
+            display: block;
+        }
+
         .about {
             padding: 60px 10%;
             text-align: center;
         }
 
         .about h2 {
-            color: #ff69b4;
+            color: #1e3a8a;
             margin-bottom: 20px;
         }
 
-        /* Project */
+       
         .project {
             padding: 60px 10%;
-            background: #fff0f5;
+            background: #e2e8f0; /* abu kebiruan */
             text-align: center;
         }
 
         .project h2 {
-            color: #ff69b4;
+            color: #1e3a8a;
             margin-bottom: 30px;
         }
 
@@ -163,34 +148,34 @@
         }
 
         .card h3 {
-            color: #ff69b4;
+            color: #0f172a;
         }
 
         .card a {
             display: inline-block;
             margin-top: 10px;
             color: white;
-            background: #ff69b4;
+            background: #1e3a8a;
             padding: 8px 15px;
             border-radius: 10px;
             text-decoration: none;
         }
 
-        /* Contact */
+      
         .contact {
             padding: 60px 10%;
             text-align: center;
         }
 
         .contact h2 {
-            color: #a82466;
+            color: #0f172a;
         }
 
-        /* Footer */
+     
         footer {
             text-align: center;
             padding: 20px;
-            background: #945f67;
+            background: #0f172a;
             color: white;
         }
     </style>
@@ -198,9 +183,9 @@
 </head>
 <body>
 
-    <!-- Navbar -->
+
     <nav>
-        <h2 class="logo">Wahyuni<span>.</span></h2>
+        <h2 class="logo">Wahyuni</h2>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -210,24 +195,22 @@
     </nav>
 
     <!-- Hero -->
-   <section id="home" class="hero">
-    <div class="hero-container">
-        
-        <div class="hero-text">
-            <h1>PORTOFOLIO</h1>
-            <p>Wahyuni</p>
-            <p>Mahasiswa Informatika | Web Developer</p>
-            <a href="#project" class="btn">Lihat Project</a>
-        </div>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            
+            <div class="hero-text">
+                <h1>PORTOFOLIO</h1>
+                <p>Wahyuni</p>
+                <p>Mahasiswa Informatika | Web Developer</p>
+                <a href="#project" class="btn">Lihat Project</a>
+            </div>
 
-        <div class="hero-img">
-            <img src="wahyuni.jpeg" alt="portofolio">
-        </div>
+            <div class="hero-img">
+                <img src="wahyuni.jpeg" alt="portofolio">
+            </div>
 
-    </div>
-</section>
-     
-    
+        </div>
+    </section>
 
     <!-- About -->
     <section id="about" class="about">
@@ -266,7 +249,7 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <h2>Kontak</h2>
-        <p>Email: ayuuuuu771@gmail.com@email.com</p>
+        <p>Email: ayuuuuu771@gmail.com</p>
         <p>Instagram: @whyuni_0</p>
     </section>
 
